@@ -1,0 +1,164 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    font-size: 1.125em;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+.card {
+    display: grid;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 21.875em;
+    height: 37.25em;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    background: hsl(216, 50%, 16%);
+    grid-row-gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.nft {
+    border-radius: inherit;
+}
+
+.card figure {
+	background: hsl(178, 100%, 50%)
+}
+.card figure .nft {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.card figure .view {
+    opacity: 0;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.card figure:hover .nft {
+	opacity: .5;
+}
+
+.card figure:hover .view {
+    opacity: 1;
+}
+
+
+.view {
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+.title, .name {
+    color:hsl(0, 0%, 100%);
+}
+
+.description, .time, .creator{
+    color:hsl(215, 51%, 70%); 
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+}
+.info {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    grid-gap: 1.5rem;
+
+}
+
+.price,.time{
+    grid-column: span 1;
+    grid-row: 3;
+}
+
+.description {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.content-creator {
+    display: grid;
+    grid-row-start: 3;
+}
+.creator {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.name {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.divider {
+    position: relative;
+    display: flex;
+    top: -80px;
+    height: 0;
+    background: hsl(215, 32%, 27%);
+    border-color: transparent;
+
+}
+.clock, .ethereum {
+    grid-column: span 1;
+    grid-row: 3;
+    position: relative;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, .title:hover {
+    color: hsl(178, 100%, 50%);
+}
+.avatar {
+    width: 2.063rem;
+    height: 2.063rem;
+}
+
+span > * {
+    display: inline-block;
+    position: relative;
+}
+
+
+
+
