@@ -525,6 +525,11 @@ video {
   z-index: 20;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -597,9 +602,22 @@ video {
   border-radius: 1rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
+}
+
 .border-nft-line-blue {
   --tw-border-opacity: 1;
   border-color: hsl(215 32% 27% / var(--tw-border-opacity));
+}
+
+.border-nft-white {
+  --tw-border-opacity: 1;
+  border-color: hsl(0 0% 100% / var(--tw-border-opacity));
 }
 
 .bg-nft-main-bg-blue {
