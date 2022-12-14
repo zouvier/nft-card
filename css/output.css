@@ -646,6 +646,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .font-outfit {
   font-family: Outfit, sans-serif;
 }
