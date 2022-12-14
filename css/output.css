@@ -670,6 +670,14 @@ video {
   line-height: 1.75rem;
 }
 
+.leading-\[1\.625rem\] {
+  line-height: 1.625rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
 .text-nft-white {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
